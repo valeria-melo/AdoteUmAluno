@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Fomulario Cadastro de Alunos</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:700|Overpass:400,700&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="page3.css" />
+  </head>
+  <body>
+    <header class="corrente-doBem">
+      <h1 id="venha">
+        <strong>Formulário de Cadastro de Alunos </strong>
+      </h1>
+    </header>
+
+    <main>
+      <form>
+        <label for="nomesobrenome">Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" class="input-padrao" required />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          class="input-padrao"
+          required
+          placeholder="seuemail@dominio.com"
+        />
+
+        <label for="telefone">Telefone</label>
+        <input
+          type="tel"
+          id="telefone"
+          class="input-padrao"
+          required
+          placeholder="(XX) XXXXX-XXXX"
+        />
+
+        <label for="telefone">RG</label>
+        <input
+          type="tel"
+          id="RG"
+          class="input-padrao"
+          required
+          placeholder="XX XXXXXX-X"
+        />
+        <label for="telefone">CPF</label>
+        <input
+          type="tel"
+          id="RG"
+          class="input-padrao"
+          required
+          placeholder="XXX XXX XXX - XX"
+        />
+
+        <label for="telefone">Endereço</label>
+        <input
+          type="tel"
+          id="RG"
+          class="input-padrao"
+          required
+          placeholder="Rua X, n X, Bairro X. Cidade X - Estado X"
+        />
+
+        <label for="mensagem">Nos conte um pouco sobre você</label>
+        <textarea
+          cols="70"
+          rows="10"
+          id="mensagem"
+          class="input-padrao"
+          required
+        ></textarea>
+
+        <fieldset>
+          <legend>Como prefere ser contactado?</legend>
+          <label for="radio-email"
+            ><input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />
+            Email</label
+          >
+
+          <label for="radio-telefone"
+            ><input
+              type="radio"
+              name="contato"
+              value="telefone"
+              id="radio-telefone"
+            />
+            Telefone</label
+          >
+
+          <label for="radio-whatsapp"
+            ><input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              id="radio-whatsapp"
+              checked
+            />
+            WhatsApp</label
+          >
+        </fieldset>
+
+        <fieldset>
+          <legend>Qual o melhor horário para contactá lo?</legend>
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+
+        <label class="checkbox"
+          ><input type="checkbox" checked />Gostaria de receber nossas novidades
+          por email?</label
+        >
+
+        <input type="submit" value="Enviar formulário" class="enviar" />
+      </form>
+    </main>
+
+    <footer>
+      <p class="copyright">&copy; DIOXEXPERT</p>
+    </footer>
+  </body>
+</html>
