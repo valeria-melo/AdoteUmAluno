@@ -41,6 +41,7 @@ p {
 }
 #texto {
   font-size: 15px;
+  text-align: justify;
 }
 #cliqueAqui {
   font-weight: bolde;
@@ -63,10 +64,23 @@ p {
   background-color: #0d1ec6;
   transform: scale(1.05);
 }
+
+.btn-branco {
+  background-color: #fff;
+  color: #5f5f5f;
+  padding: 16px 48px;
+  border-radius: 4px;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+  font-weight: bold;
+}
 /* container */
 .container {
   width: 900px;
   margin: 60px auto;
+  background: #5f5f5f;
 }
 
 /* cards */
@@ -176,6 +190,11 @@ p {
   }
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .letra {
+    font-style: italic;
+    text-align: center;
   }
   .typewriter {
     animation: animated-text 4s steps(31, end);
